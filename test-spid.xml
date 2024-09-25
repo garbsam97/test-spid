@@ -1,33 +1,36 @@
 <?xml version="1.0"?>
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://localhost:8000" ID="https___localhost_8000"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:spid="https://spid.gov.it/saml-extensions" validUntil="2024-09-27T10:21:14Z" cacheDuration="PT604800S" entityID="https://laravel-tinfo-spid.test:8443" ID="pfxbfc7cf88-bb54-be40-abc0-c1594ccc92d9"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
   <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
     <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-  <ds:Reference URI="#https___localhost_8000"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>n0cmwJObGm9qc+r4udgptwBFMUeqN3irEmsqmA3EN5w=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>BDXJMHyHGR4ClFdvG7Z6z4+lHxJiOuw9nOlO0tk+ULruZUVOp1J0yBuphOqErhWk9GSz7gJxHNbl6z75CI/yD4cmutXNuLfqHtKQGXxfvD6bHjGrgZofmEdtuTCSt4r6dGn1BFJ5NV7graqhJXaFg9cftcnRvHAF71A3dWdTiuF+jq2DdQxbuAdTy/tUw3WUNiXdz/vdJoap7EXOS5GYleq7i8Ntq610XaSKSxckYKogm3y7eS2shxWp8vy+zny/Zno18Pm+pHoj+Fow8dkn5XuQLGLs4hmzeXIsnNCl+vhd7aOlafEtw6aYY6FsfOKMbCyoyDWulx1qEf198NuMcg==</ds:SignatureValue>
-<ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDizCCAnOgAwIBAgIUJikRfAz1RBPB2iGqxPXyxe/8EvcwDQYJKoZIhvcNAQELBQAwVTELMAkGA1UEBhMCSVQxDjAMBgNVBAgMBUl0YWx5MQ4wDAYDVQQHDAVNaWxhbjESMBAGA1UECgwJbXlzZXJ2aWNlMRIwEAYDVQQDDAlsb2NhbGhvc3QwHhcNMjQwOTI0MDg1MDIyWhcNMjUwOTI0MDg1MDIyWjBVMQswCQYDVQQGEwJJVDEOMAwGA1UECAwFSXRhbHkxDjAMBgNVBAcMBU1pbGFuMRIwEAYDVQQKDAlteXNlcnZpY2UxEjAQBgNVBAMMCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKbIDiJislrcDjw6JBfiRUWZboi/BUWtwnq9jRntWHg1PXA+JT3D/1Qim4obr6bFzleNW2vQWlCeC8zwwEQqEmXFR/L8JcurlCzYyKq3/bR3PeFxgSUQelynCY/4o5dM4WAF/XqARPPKGriR9XUQhuUVCT08G4NDiNroduzY/2Ym5gn+5we7mI01qWomNjPPWLKFvjFlMukXG4DZ0OydFShrstR2fFMVFhb8tT4E69HApvKQMaQW3HZTs0TWSB3ngjToA5B2JWT06QZcOTxk3gRG+axveHRk1dEqUAVLi8q9WZpVKKj/MYb3M4fSr4aD2BxcpLROKPw6jNGWEclOis0CAwEAAaNTMFEwHQYDVR0OBBYEFMxks2zd3DGCpLkyOrTVqnByfxlYMB8GA1UdIwQYMBaAFMxks2zd3DGCpLkyOrTVqnByfxlYMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAInBwwtGhiPXXaRM3lthfYCq7kqKMMAs0WcvezftJOwPBUYwaKkxkviL8qFIR+B+1QjVquD+9y07+P0MVHjUozW+y83xdyAjZnBWs1Bbg4pXNPvaQmIB6JTlgdAyuUgATaEWzZSiZzdvN9gWflskPP3UWQx6HgjsIP9eNq0/6X9aiEGo+eCNnbkgUlxkWlFJDaWs11Daqt84E61s/y6TWi4v3iOrtgogQElUWDubvag+NKacw70K3r449PJaJtuZhfKLUWnJ9A25dbf1iz3vMhY7FktXvXCGQK54uOsAU3MOfty9UjzYyi+5po1IHIJsVBcyiPm2Ep38akieZ8jaNoI=</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature>
-    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="true">
-        <md:KeyDescriptor use="signing">
-            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                <ds:X509Data><ds:X509Certificate>MIIDizCCAnOgAwIBAgIUJikRfAz1RBPB2iGqxPXyxe/8EvcwDQYJKoZIhvcNAQELBQAwVTELMAkGA1UEBhMCSVQxDjAMBgNVBAgMBUl0YWx5MQ4wDAYDVQQHDAVNaWxhbjESMBAGA1UECgwJbXlzZXJ2aWNlMRIwEAYDVQQDDAlsb2NhbGhvc3QwHhcNMjQwOTI0MDg1MDIyWhcNMjUwOTI0MDg1MDIyWjBVMQswCQYDVQQGEwJJVDEOMAwGA1UECAwFSXRhbHkxDjAMBgNVBAcMBU1pbGFuMRIwEAYDVQQKDAlteXNlcnZpY2UxEjAQBgNVBAMMCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKbIDiJislrcDjw6JBfiRUWZboi/BUWtwnq9jRntWHg1PXA+JT3D/1Qim4obr6bFzleNW2vQWlCeC8zwwEQqEmXFR/L8JcurlCzYyKq3/bR3PeFxgSUQelynCY/4o5dM4WAF/XqARPPKGriR9XUQhuUVCT08G4NDiNroduzY/2Ym5gn+5we7mI01qWomNjPPWLKFvjFlMukXG4DZ0OydFShrstR2fFMVFhb8tT4E69HApvKQMaQW3HZTs0TWSB3ngjToA5B2JWT06QZcOTxk3gRG+axveHRk1dEqUAVLi8q9WZpVKKj/MYb3M4fSr4aD2BxcpLROKPw6jNGWEclOis0CAwEAAaNTMFEwHQYDVR0OBBYEFMxks2zd3DGCpLkyOrTVqnByfxlYMB8GA1UdIwQYMBaAFMxks2zd3DGCpLkyOrTVqnByfxlYMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAInBwwtGhiPXXaRM3lthfYCq7kqKMMAs0WcvezftJOwPBUYwaKkxkviL8qFIR+B+1QjVquD+9y07+P0MVHjUozW+y83xdyAjZnBWs1Bbg4pXNPvaQmIB6JTlgdAyuUgATaEWzZSiZzdvN9gWflskPP3UWQx6HgjsIP9eNq0/6X9aiEGo+eCNnbkgUlxkWlFJDaWs11Daqt84E61s/y6TWi4v3iOrtgogQElUWDubvag+NKacw70K3r449PJaJtuZhfKLUWnJ9A25dbf1iz3vMhY7FktXvXCGQK54uOsAU3MOfty9UjzYyi+5po1IHIJsVBcyiPm2Ep38akieZ8jaNoI=</ds:X509Certificate></ds:X509Data>
-            </ds:KeyInfo>
-        </md:KeyDescriptor>
-            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost:8000/slo"/>
-            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost:8000/slo"/>        
-        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-        <md:AssertionConsumerService index="0" isDefault="true" Location="https://localhost:8000/acs" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
-        <md:AttributeConsumingService index="0">
-            <md:ServiceName xml:lang="it">Set 0</md:ServiceName>       
-            <md:RequestedAttribute Name="name"/>
-            <md:RequestedAttribute Name="familyName"/>
-            <md:RequestedAttribute Name="email"/>
-            <md:RequestedAttribute Name="fiscalNumber"/></md:AttributeConsumingService>
-        <md:AttributeConsumingService index="1">
-            <md:ServiceName xml:lang="it">Set 1</md:ServiceName>       
-            <md:RequestedAttribute Name="name"/>
-            <md:RequestedAttribute Name="familyName"/>
-            <md:RequestedAttribute Name="fiscalNumber"/>
-            <md:RequestedAttribute Name="email"/>
-            <md:RequestedAttribute Name="spidCode"/></md:AttributeConsumingService></md:SPSSODescriptor><md:Organization>
-    <md:OrganizationName xml:lang="it">your organization full name</md:OrganizationName>
-    <md:OrganizationDisplayName xml:lang="it">your organization display name</md:OrganizationDisplayName>
-    <md:OrganizationURL xml:lang="it">https://localhost:8000</md:OrganizationURL>
-</md:Organization></md:EntityDescriptor>
+  <ds:Reference URI="#pfxbfc7cf88-bb54-be40-abc0-c1594ccc92d9"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>0+TVHRH2nDRNzzmq5+gV3V0+t9Zttc6Ng61VQdadNeU=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>PJ4CP4V48hdx1pj9iDb1g0lZhdInXkQy/lpI2S/r7eCkj7pNUHwx14MNxqUXJStqTDE9+h1zvNKF1fXRXwSjVc7L9wo9WvMhYui1S+hle4f5wC9Cos4z5rgqgW5uBWb4VB+FKkh2rjZJfw50Zfn2A5xEo55j4+IVG6YleLfQ0IVsvYxSUdaTDnrtkJj5wWz+5TF6fZHvPpao88+xOcwyhlWFUU0M9GNpbCb3iLNQu7ERcpwznSWRUEQLP3ecc2XFh12zOcLTQJco9jdrvpu4GTm4IGqFrRfgGPcejO7nWkBCWoMblwuvEm2LyeY4nObwcw2h+JyZiePRhUoEGQ5Lmg==</ds:SignatureValue>
+<ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDgzCCAmugAwIBAgIULAp1YQlWoEPUrugRqWqbUf3ES3wwDQYJKoZIhvcNAQELBQAwUTELMAkGA1UEBhMCSVQxCzAJBgNVBAgMAlJNMQ0wCwYDVQQHDARSb21lMSYwJAYDVQQKDB1BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTAeFw0yMzA1MjkxMDUzNDNaFw0zMDEyMzExMDUzNDNaMFExCzAJBgNVBAYTAklUMQswCQYDVQQIDAJSTTENMAsGA1UEBwwEUm9tZTEmMCQGA1UECgwdQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCri1uwE3WfwGiTpkovorKlrcsAI7YrP55QqS3WLZbe+byYx219SsW0Ompe7rzChfmsNUsien3c4BGJN0zG1a2xJpfLJRhi9npJ228Aa+KAhPtMJ/uP2axhg6GxP6GG1LgoQavEF6gLDT/isQNCrEMKr8FNeVNPM5k+6Q03pqvZPvyNuLGkDGfDMHEg0RdHhPb/cJsa9dCULkkNi5y/SY68X58JOWdEpWYBjn83ES1G1hiPxr/DluJTebjourL5CdtiOHNoi3UoGJkBSTtrKtOg6Dq4nHwOU8qyHxQTYjxy8hp/cS3MNnXOgZIqc6mqiGicvLEhwDZBQHbXfjXa7N+NAgMBAAGjUzBRMB0GA1UdDgQWBBQsxX06P7VqgQ7FluV4X1Ep9C3P/zAfBgNVHSMEGDAWgBQsxX06P7VqgQ7FluV4X1Ep9C3P/zAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAj4EwJeS52rzJXwCQvaQzP9LAx2gf9RPciztM32u88t3urucgAfUq+7aIDi8nKkpPfKgUFFL397jjKy1bq/i8o5GiAVe4RwOjGw3zma9L8WUY79BPId+sOuAhAtaEqgO2gu8cuXs4u7rAnDXbFJTPClUD6eum2JD+gHd61Yyvu3dJx/6bUNNcpg//XkwUEA9KoldQ7xju5oVLJ2aPv4TCeYXrhK5lunh3l/l3JhjyEhi3zIJYIAWiEVX/qIghYWM0yJ31j2GkZYUm1Z0GVv1VsUPxUModDAZH7zudE58Uyi8TyjVp6nDCqy+dgn7ugnSLTxBv/J9nOtSrxH1cPJES5</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature>
+  <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDgzCCAmugAwIBAgIULAp1YQlWoEPUrugRqWqbUf3ES3wwDQYJKoZIhvcNAQELBQAwUTELMAkGA1UEBhMCSVQxCzAJBgNVBAgMAlJNMQ0wCwYDVQQHDARSb21lMSYwJAYDVQQKDB1BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTAeFw0yMzA1MjkxMDUzNDNaFw0zMDEyMzExMDUzNDNaMFExCzAJBgNVBAYTAklUMQswCQYDVQQIDAJSTTENMAsGA1UEBwwEUm9tZTEmMCQGA1UECgwdQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCri1uwE3WfwGiTpkovorKlrcsAI7YrP55QqS3WLZbe+byYx219SsW0Ompe7rzChfmsNUsien3c4BGJN0zG1a2xJpfLJRhi9npJ228Aa+KAhPtMJ/uP2axhg6GxP6GG1LgoQavEF6gLDT/isQNCrEMKr8FNeVNPM5k+6Q03pqvZPvyNuLGkDGfDMHEg0RdHhPb/cJsa9dCULkkNi5y/SY68X58JOWdEpWYBjn83ES1G1hiPxr/DluJTebjourL5CdtiOHNoi3UoGJkBSTtrKtOg6Dq4nHwOU8qyHxQTYjxy8hp/cS3MNnXOgZIqc6mqiGicvLEhwDZBQHbXfjXa7N+NAgMBAAGjUzBRMB0GA1UdDgQWBBQsxX06P7VqgQ7FluV4X1Ep9C3P/zAfBgNVHSMEGDAWgBQsxX06P7VqgQ7FluV4X1Ep9C3P/zAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAj4EwJeS52rzJXwCQvaQzP9LAx2gf9RPciztM32u88t3urucgAfUq+7aIDi8nKkpPfKgUFFL397jjKy1bq/i8o5GiAVe4RwOjGw3zma9L8WUY79BPId+sOuAhAtaEqgO2gu8cuXs4u7rAnDXbFJTPClUD6eum2JD+gHd61Yyvu3dJx/6bUNNcpg//XkwUEA9KoldQ7xju5oVLJ2aPv4TCeYXrhK5lunh3l/l3JhjyEhi3zIJYIAWiEVX/qIghYWM0yJ31j2GkZYUm1Z0GVv1VsUPxUModDAZH7zudE58Uyi8TyjVp6nDCqy+dgn7ugnSLTxBv/J9nOtSrxH1cPJES5</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://laravel-tinfo-spid.test:8443/spid/logout"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://laravel-tinfo-spid.test:8443/spid/acs" index="1"/>
+    <md:AttributeConsumingService index="1">
+      <md:ServiceName xml:lang="en">SPID service name</md:ServiceName>
+      <md:RequestedAttribute Name="spidCode"/>
+      <md:RequestedAttribute Name="name"/>
+      <md:RequestedAttribute Name="familyName"/>
+      <md:RequestedAttribute Name="fiscalNumber"/>
+      <md:RequestedAttribute Name="mobilePhone"/>
+      <md:RequestedAttribute Name="email"/>
+    </md:AttributeConsumingService>
+  </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en">Example</md:OrganizationName>
+    <md:OrganizationName xml:lang="it">Example</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en">Example Organization</md:OrganizationDisplayName>
+    <md:OrganizationDisplayName xml:lang="it">Example Organization</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en">https://laravel-tinfo-spid.test:8443</md:OrganizationURL>
+    <md:OrganizationURL xml:lang="it">https://laravel-tinfo-spid.test:8443</md:OrganizationURL>
+  </md:Organization>
+<md:ContactPerson contactType="other"><md:Extensions><spid:Private/><spid:VATNumber>12345678901</spid:VATNumber><spid:FiscalCode>FNTCMS73M25L224C</spid:FiscalCode></md:Extensions><md:EmailAddress>other@other.org</md:EmailAddress></md:ContactPerson><md:ContactPerson contactType="billing"><md:Extensions><spid:Private/><spid:VATNumber>12345678901</spid:VATNumber><spid:CessionarioCommittente><spid:DatiAnagrafici><spid:IdPaese>IT</spid:IdPaese><spid:IdCodice>12345678901</spid:IdCodice><spid:Anagrafica><spid:Denominazione>Societ&#xE0; dei collaudi</spid:Denominazione></spid:Anagrafica></spid:DatiAnagrafici></spid:CessionarioCommittente><spid:Sede><spid:Indirizzo>via dei test</spid:Indirizzo><spid:NumeroCivico>1756</spid:NumeroCivico><spid:CAP>20212</spid:CAP><spid:Comune>Milano</spid:Comune><spid:Provincia>MI</spid:Provincia><spid:Nazione>IT</spid:Nazione></spid:Sede></md:Extensions><md:EmailAddress>billing@other.org</md:EmailAddress><md:TelephoneNumber>+39329000001</md:TelephoneNumber></md:ContactPerson></md:EntityDescriptor>
